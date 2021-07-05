@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>INDENT and DEDENT token pairing</TITLE>
+<META NAME="description" CONTENT="INDENT and DEDENT token pairing">
+<META NAME="keywords" CONTENT="common_report">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="common_report.css">
+
+<LINK REL="previous" HREF="node32.html">
+<LINK REL="up" HREF="node31.html">
+<LINK REL="next" HREF="node34.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html546"
+  HREF="node34.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html542"
+  HREF="node31.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html538"
+  HREF="node32.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html544"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html547"
+  HREF="node34.html">Parser</A>
+<B> Up:</B> <A NAME="tex2html543"
+  HREF="node31.html">Lexer</A>
+<B> Previous:</B> <A NAME="tex2html539"
+  HREF="node32.html">Token generation</A>
+ &nbsp; <B>  <A NAME="tex2html545"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION0010112000000000000000">
+INDENT and DEDENT token pairing</A>
+</H3>
+
+<P>
+All the INDENT and DEDENT tokens generated
+					must match. Also, the tokens must appear at
+					the correct place, ie. the INDENT token must be
+					generated at the beginning of an indented code block,
+					and the DEDENT token must be generated at the end
+					of the code block (beginning of the next line).
+
+<P>
+Multiple DEDENT tokens may be generated at
+					the same time, but not INDENT. Also, an INDENT
+					token cannot appear immediately after a DEDENT.
+
+<P>
+<BR><HR>
+<ADDRESS>
+Fayaz Yusuf Khan
+2010-03-25
+</ADDRESS>
+</BODY>
+</HTML>

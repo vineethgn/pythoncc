@@ -1,0 +1,173 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Comparison with Python interpreter</TITLE>
+<META NAME="description" CONTENT="Comparison with Python interpreter">
+<META NAME="keywords" CONTENT="common_report">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="common_report.css">
+
+<LINK REL="next" HREF="node47.html">
+<LINK REL="previous" HREF="node45.html">
+<LINK REL="up" HREF="node43.html">
+<LINK REL="next" HREF="node47.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html709"
+  HREF="node47.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html705"
+  HREF="node43.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html699"
+  HREF="node45.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html707"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html710"
+  HREF="node47.html">Auxiliary progress</A>
+<B> Up:</B> <A NAME="tex2html706"
+  HREF="node43.html">Program output</A>
+<B> Previous:</B> <A NAME="tex2html700"
+  HREF="node45.html">Output</A>
+ &nbsp; <B>  <A NAME="tex2html708"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION0011303000000000000000">
+Comparison with Python interpreter</A>
+</H3>
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER"><A NAME="138"></A>
+<TABLE>
+<CAPTION><STRONG>Table 7.1:</STRONG>
+Time taken for execution of each input case in Python and 
+						Pythoncc</CAPTION>
+<TR><TD>					<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="LEFT">Input case</TD>
+<TD ALIGN="RIGHT">Python</TD>
+<TD ALIGN="RIGHT">Pythoncc</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Case 1</TD>
+<TD ALIGN="RIGHT">0.18</TD>
+<TD ALIGN="RIGHT">0.02</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Case 2</TD>
+<TD ALIGN="RIGHT">0.15</TD>
+<TD ALIGN="RIGHT">0.01</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Case 3</TD>
+<TD ALIGN="RIGHT">0.13</TD>
+<TD ALIGN="RIGHT">0.01</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Case 4</TD>
+<TD ALIGN="RIGHT">0.16</TD>
+<TD ALIGN="RIGHT">0.01</TD>
+</TR>
+</TABLE>
+					</TD></TR>
+</TABLE>
+</DIV><P></P>
+<BR>
+
+<P>
+The table shows the comparison of the Python interpreter with
+				the Pythoncc generated code for a given Python script.
+				It is quite clear that there is a noticable
+				increase in the code efficiency (More than 10x).
+
+<P>
+<B>Case 1</B>
+
+<P>
+<PRE>
+	print 1
+	print 2 + 2
+	print 2 * 2
+	print 2 - 1
+	print 2 / 1
+	print "Hello world"
+	print "Hello " + "world"
+</PRE>
+
+<P>
+<B>Case 2</B>
+
+<P>
+<PRE>
+	print 1
+	print 2 + 2
+	print 2 * 2
+	print 2 - 1
+	print 2 / 1
+	print "Hello world"
+	print "Hello " + "world"
+	print 1
+	print 2 + 2
+	print 2 * 2
+	print 2 - 1
+	print 2 / 1
+	print "Hello world"
+	print "Hello " + "world"
+</PRE>
+
+<P>
+<B>Case 3</B>
+
+<P>
+<PRE>
+	print 1
+	print 2 + 2
+	print 2 * 2
+	print 2 - 1
+	print 2 / 1
+</PRE>
+
+<P>
+<B>Case 4</B>
+
+<P>
+<PRE>
+	print 1
+	print 2 + 2
+	print 2 * 2
+	print 2 - 1
+	print 2 / 1
+	print 1
+	print 2 + 2
+	print 2 * 2
+	print 2 - 1
+	print 2 / 1
+</PRE>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Fayaz Yusuf Khan
+2010-03-25
+</ADDRESS>
+</BODY>
+</HTML>
