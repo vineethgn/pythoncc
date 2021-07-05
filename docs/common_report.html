@@ -1,0 +1,278 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Pythoncc Mini-project report</TITLE>
+<META NAME="description" CONTENT="Pythoncc Mini-project report">
+<META NAME="keywords" CONTENT="common_report">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="common_report.css">
+
+<LINK REL="next" HREF="node1.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html35"
+  HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/lib/latex2html/icons/next.png"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/lib/latex2html/icons/up_g.png"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/lib/latex2html/icons/prev_g.png"> 
+<A NAME="tex2html33"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html36"
+  HREF="node1.html">Contents</A>
+ &nbsp; <B>  <A NAME="tex2html34"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+		<DIV ALIGN="CENTER">
+<FONT SIZE="+2">Pythoncc - Python Code Compiler</FONT> <BR>
+<BR>
+<BR>				<FONT SIZE="+1">A PROJECT REPORT</FONT> <BR>
+<BR>
+<BR>				<FONT SIZE="+1"><I>Submitted by</I></FONT> <BR>
+<BR>				<FONT SIZE="+2">Muhammad Farsan</FONT> <FONT SIZE="+1">(REG No: 12080832)</FONT> 
+<BR>				<FONT SIZE="+2">Fayaz Yusuf Khan</FONT> <FONT SIZE="+1">(REG No: 12080815)</FONT> 
+<BR>				<FONT SIZE="+2">Sreedharlal B Naick</FONT> <FONT SIZE="+1">(REG No: 12080851)</FONT> 
+<BR>				<FONT SIZE="+2">Vineeth G Nair</FONT> <FONT SIZE="+1">(REG No: 12080860)</FONT> <BR>
+<BR>				<FONT SIZE="+1">					Under the guidance of <BR>
+<BR>
+Ms. Lisha P.P 
+<BR>
+Lecturer in 
+<BR>
+DEPARTMENT OF COMPUTER SCIENCE &amp; ENGINEERING
+<BR>
+<BR></FONT></DIV>
+<P>
+<DIV ALIGN="CENTER"></DIV>
+<P>
+<DIV ALIGN="CENTER"><FONT SIZE="+1"><I>In partial fulfillment for the award of
+					the degree of</I> <BR>
+<BR>				</FONT>
+				<FONT SIZE="+2">BACHELOR OF TECHNOLOGY</FONT> <BR>
+<BR>				<FONT SIZE="+1">COCHIN UNIVERSITY OF SCIENCE AND TECHNOLOGY</FONT> <BR>
+<BR>				 
+<BR>
+DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING <BR>
+<BR>				<FONT SIZE="+2">MODEL ENGINEERING COLLEGE</FONT> <BR>
+<BR>
+COCHIN-682 021 
+<BR>
+March 2010 
+<BR>		
+</DIV>
+
+<P>
+
+<P>
+<FONT SIZE="+1">		</FONT>
+<H3>Abstract:</H3>
+<DIV>
+This project report summarizes the mini-project done by Group G
+			for the sixth academic semester. The following pages describe
+			the working and internal details of the project. It explains
+			the methods and strategies used in the project development.
+			Finally, the operation of the software and the obtained output is
+			described. The final page discusses the future direction and goals
+			of the project.
+		</DIV>
+<P>
+
+<P>
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"></A>
+
+<UL>
+<LI><A NAME="tex2html37"
+  HREF="node1.html">Contents</A>
+<LI><A NAME="tex2html38"
+  HREF="node2.html">List of Tables</A>
+<LI><A NAME="tex2html39"
+  HREF="node3.html">List of Figures</A>
+<LI><A NAME="tex2html40"
+  HREF="node4.html">Glossary</A>
+<LI><A NAME="tex2html41"
+  HREF="node5.html">Introduction</A>
+<UL>
+<LI><A NAME="tex2html42"
+  HREF="node6.html">About the project</A>
+<LI><A NAME="tex2html43"
+  HREF="node7.html">Project problem domain</A>
+<LI><A NAME="tex2html44"
+  HREF="node8.html">Existing system</A>
+<LI><A NAME="tex2html45"
+  HREF="node9.html">Project licensing and warranting terms</A>
+<LI><A NAME="tex2html46"
+  HREF="node10.html">Project development</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html47"
+  HREF="node11.html">System requirements</A>
+<UL>
+<LI><A NAME="tex2html48"
+  HREF="node12.html">Hardware requirements</A>
+<LI><A NAME="tex2html49"
+  HREF="node13.html">Software requirements</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html50"
+  HREF="node14.html">Technologies and tools utilized</A>
+<UL>
+<LI><A NAME="tex2html51"
+  HREF="node15.html">flex</A>
+<LI><A NAME="tex2html52"
+  HREF="node16.html">Bison</A>
+<LI><A NAME="tex2html53"
+  HREF="node17.html">LLVM</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html54"
+  HREF="node18.html">Software functional specifications</A>
+<UL>
+<LI><A NAME="tex2html55"
+  HREF="node19.html">Code generation</A>
+<LI><A NAME="tex2html56"
+  HREF="node20.html">Syntax error detection</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html57"
+  HREF="node21.html">Compiler design</A>
+<UL>
+<LI><A NAME="tex2html58"
+  HREF="node22.html">Lexical analysis</A>
+<UL>
+<LI><A NAME="tex2html59"
+  HREF="node23.html">Return type</A>
+<LI><A NAME="tex2html60"
+  HREF="node24.html">Statement grouping</A>
+</UL>
+<LI><A NAME="tex2html61"
+  HREF="node25.html">Syntactic analysis</A>
+<UL>
+<LI><A NAME="tex2html62"
+  HREF="node26.html">Abstract syntax tree</A>
+</UL>
+<LI><A NAME="tex2html63"
+  HREF="node27.html">Lowering of AST to LLVM IR</A>
+<LI><A NAME="tex2html64"
+  HREF="node28.html">Code generation</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html65"
+  HREF="node29.html">Test plan</A>
+<UL>
+<LI><A NAME="tex2html66"
+  HREF="node30.html">Unit testing</A>
+<UL>
+<LI><A NAME="tex2html67"
+  HREF="node31.html">Lexer</A>
+<UL>
+<LI><A NAME="tex2html68"
+  HREF="node32.html">Token generation</A>
+<LI><A NAME="tex2html69"
+  HREF="node33.html">INDENT and DEDENT token pairing</A>
+</UL>
+<LI><A NAME="tex2html70"
+  HREF="node34.html">Parser</A>
+<UL>
+<LI><A NAME="tex2html71"
+  HREF="node35.html">Syntax accuracy</A>
+<LI><A NAME="tex2html72"
+  HREF="node36.html">AST generation</A>
+</UL>
+<LI><A NAME="tex2html73"
+  HREF="node37.html">Code generator</A>
+<UL>
+<LI><A NAME="tex2html74"
+  HREF="node38.html">AST traversal</A>
+<LI><A NAME="tex2html75"
+  HREF="node39.html">IR representation</A>
+</UL>
+</UL>
+</UL>
+<BR>
+<LI><A NAME="tex2html76"
+  HREF="node40.html">Software building and operation</A>
+<UL>
+<LI><A NAME="tex2html77"
+  HREF="node41.html">Software compilation</A>
+<LI><A NAME="tex2html78"
+  HREF="node42.html">Software operation</A>
+<LI><A NAME="tex2html79"
+  HREF="node43.html">Program output</A>
+<UL>
+<LI><A NAME="tex2html80"
+  HREF="node44.html">Sample input</A>
+<LI><A NAME="tex2html81"
+  HREF="node45.html">Output</A>
+<LI><A NAME="tex2html82"
+  HREF="node46.html">Comparison with Python interpreter</A>
+<LI><A NAME="tex2html83"
+  HREF="node47.html">Auxiliary progress</A>
+</UL>
+</UL>
+<BR>
+<LI><A NAME="tex2html84"
+  HREF="node48.html">Conclusion and future enhancements</A>
+<UL>
+<LI><A NAME="tex2html85"
+  HREF="node49.html">Conclusion</A>
+<LI><A NAME="tex2html86"
+  HREF="node50.html">Future enhancements</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html87"
+  HREF="node51.html">Bibliography</A>
+<LI><A NAME="tex2html88"
+  HREF="node52.html">About this document ...</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html35"
+  HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/lib/latex2html/icons/next.png"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/lib/latex2html/icons/up_g.png"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/lib/latex2html/icons/prev_g.png"> 
+<A NAME="tex2html33"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html36"
+  HREF="node1.html">Contents</A>
+ &nbsp; <B>  <A NAME="tex2html34"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Fayaz Yusuf Khan
+2010-03-25
+</ADDRESS>
+</BODY>
+</HTML>

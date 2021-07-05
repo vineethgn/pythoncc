@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Lowering of AST to LLVM IR</TITLE>
+<META NAME="description" CONTENT="Lowering of AST to LLVM IR">
+<META NAME="keywords" CONTENT="common_report">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="common_report.css">
+
+<LINK REL="next" HREF="node28.html">
+<LINK REL="previous" HREF="node25.html">
+<LINK REL="up" HREF="node21.html">
+<LINK REL="next" HREF="node28.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html459"
+  HREF="node28.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html455"
+  HREF="node21.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html449"
+  HREF="node26.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html457"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html460"
+  HREF="node28.html">Code generation</A>
+<B> Up:</B> <A NAME="tex2html456"
+  HREF="node21.html">Compiler design</A>
+<B> Previous:</B> <A NAME="tex2html450"
+  HREF="node26.html">Abstract syntax tree</A>
+ &nbsp; <B>  <A NAME="tex2html458"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION009300000000000000000">
+Lowering of AST to LLVM IR</A>
+</H1>
+		<A HREF=node4.html#tex2html17 NAME="172"></A>
+
+<P>
+The AST itself contains methods for the code to be lowered to
+			the next phase.
+			The driver function only calls the <code>root-&gt;generate();</code>
+			method. This method causes the tree to be walked in an in-order
+			traversal manner. Each node emits its IR code when it is traversed.
+			This is done efficiently by making use of the polymorphic feature
+			of the C++ object methods.
+
+<P>
+<BR><HR>
+<ADDRESS>
+Fayaz Yusuf Khan
+2010-03-25
+</ADDRESS>
+</BODY>
+</HTML>
